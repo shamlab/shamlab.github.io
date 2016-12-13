@@ -1,50 +1,53 @@
 Having filled out the form --- (*)
- 
+Having submitted a photograph --- (+)
+
 # PI's
 
 Pak Sham
 Stacey Cherny
 Miaoxin Li
+Merce (+)
 Clara Tang (*)
 
 # Post-docs
 
-Peikai Chen
+Peikai Chen (+)
 Xueya Zhou
-Timothy Mak (*)
-Xiaowei Zhang (*)
-Mulin Jun Li (?)
-Julia Alisha (?)
+Timothy Mak (*) (+)
+Xiaowei Zhang (*) (+)
+Mulin Jun Li (*) (+)
 
 # Students
 
-Yan Li (*)
-Jacob Hsu (*)
-Robert Porsch (*)
-Yiming Qin (*)
-Zhenyang Guo (*)
-Yiming Li (*)
-Jill Ding (*)
-Hang Xu (*)
+Yan Li (*) (+)
+Jacob Hsu (*) (+)
+Robert Porsch (*) (+)
+Yiming Qin (*) (+)
+Zhenyang Guo (*) (+)
+Yiming Li (*) (+)
+Jill Ding (*) (+)
+Hang Xu (*) (+)
 Ken Shun Hang Yip (?)
-Hongcheng Yao (*)
-Rui Ye (*)
+Hongcheng Yao (*) (+)
+Rui Ye (*) (+)
 Sunny Zhuang (*)
-New guy (Not on slack?)
+Ken Li (*)
 
 # RA's and staff
 
-Thomas Malzac (*) (?)
-Juilian Yeung
+Julia Alisha
+Thomas Malzac (*)
 
 # Past members
 
 Johnny Kwan
 Hongsheng Gui
 Desmond Campbell
+Zhenxing Yang
 Beatrice Wu
 Shing Wan Choi
 John Wong
+Juilian Yeung
 Owen Qin
 Silvia Deng
 Zhicheng Pan
