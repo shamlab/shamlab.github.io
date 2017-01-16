@@ -11,6 +11,17 @@ body {
 	margin-top: 10px;
 }
 
+body .modal-lg {
+    width: 60%; /* desired relative width */
+    /* place center */
+    margin-left:auto;
+    margin-right:auto; 
+}
+
+b {
+	display:none;
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
