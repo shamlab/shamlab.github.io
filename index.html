@@ -258,9 +258,11 @@
 		  <!-- Colored version -->
           <!-- We develop and apply statistical methods to investigate complex traits such as <span style="color: #006dcc"><em>diabetes</em></span>, <span style="color: #006dcc"><em>schizophrenia</em></span> and others.
           We have devised novel tests to increase statistical power of large scale genome wide association studies, and developed new methods to estimate <span style="color: #5cb85c"><em>polygenic risk scores</em></span>, and <span style="color: #5cb85c"><em>heritabilities</em></span> of various traits. -->
-          We develop and apply statistical methods to investigate complex traits such as <em>diabetes</em>, <em>schizophrenia</em> and others.
-          We have devised novel tests to increase statistical power of large scale genome wide association studies, and developed new methods to estimate <em>polygenic risk scores</em>, and <em>heritabilities</em> of various traits.
-          We have applied these methods to uncover new associated genetic variants and to improve our understanding of a variety of phenotypes.
+          <ul>
+		  <li>We develop and apply statistical methods to investigate complex traits such as <em>diabetes</em>, <em>schizophrenia</em> and others.</li>
+          <li>We have devised novel tests to increase statistical power of large scale genome wide association studies, and developed new methods to estimate <em>polygenic risk scores</em>, and <em>heritabilities</em> of various traits.</li>
+          <li>We have applied these methods to uncover new associated genetic variants and to improve our understanding of a variety of phenotypes.</li>
+	      </ul>
           </p>
         </div>
         <div class="col-md-5">
@@ -274,9 +276,11 @@
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">Rare Diseases<span class="text-muted"></span></h2>
           <p class="lead">
-          We deploy whole exome and whole genome sequencing to improve out understanding of rare diseases and uncover diseases-causing mutations.
-          Particularly we are interested in congenital disorders specific to, or with a higher incidence rate within the Asian population.
-          In addition, we have developed new bioinformatic and statistical tools to improve our understanding of the genetic architecture of a variety of rare diseases.
+		  <ul>
+          <li>We deploy whole exome and whole genome sequencing to improve out understanding of rare diseases and uncover diseases-causing mutations.</li>
+          <li>Particularly we are interested in congenital disorders specific to, or with a higher incidence rate within the Asian population.</li>
+          <li>In addition, we have developed new bioinformatic and statistical tools to improve our understanding of the genetic architecture of a variety of rare diseases.</li>
+		  </ul>
           </p>
         </div>
         <div class="col-md-5 col-md-pull-7">
@@ -289,10 +293,37 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Gene Expression<span class="text-muted"></span></h2>
-          <p class="lead">Need some help here.</p>
+          <p class="lead">
+		  <ul>
+		  <li>We are interested in expression profiles in diseases like disc degeneration, kidney disease, and and their differences from normal samples.</li>
+		  <li>In addition we are also inferring the regulation of gene expressions with the knowledge of functional genomics.</li>
+		  <li>Relative tools on gene expression normalization and analyzation, and methods on gene regulatory network inference are developed.</li>
+		  </ul>
+		  </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="http://placehold.it/600x600" alt="Generic placeholder image">
+			<div class="container">
+			    <!-- Slider -->
+			    <div class="row-fluid">
+			      <div class="span9" id="slider">
+			        <div class="row-fluid">
+			          <div class="span2" id="carousel-bounding-box">
+			            <div id="geCarousel" class="carousel slide">
+			              <!-- Carousel items -->
+			              <div class="carousel-inner">
+			                <div class="active item" data-slide-number="0"><img class="img-rounded" src="./graphics/ge_maplot.jpg"></div>
+			                <div class="item" data-slide-number="1"><img class="img-rounded" src="./graphics/ge_network.jpg"></div>
+			              </div>
+			            </div>
+			            <!-- Carousel nav -->
+			            <div class="carousel-controls-mini">
+			                <a href="#geCarousel" data-slide="prev">&laquo;</a>
+			                <a href="#geCarousel" data-slide="next">&raquo;</a>
+			            </div>
+			          </div>
+			      </div>
+			    </div> <!--/Slider-->
+			</div>
         </div>
       </div>
 
@@ -316,6 +347,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
     <script src="./js/bootstrap.min.js"></script>
+    <script>
+    $('#geCarousel').carousel({
+                  interval: 3000
+          });
+  
+          $('#carousel-text').html($('#slide-content-0').html());
+  
+          //Handles the carousel thumbnails
+          $('[id^=carousel-selector-]').click( function(){
+                  var id_selector = $(this).attr("id");
+                  var id = id_selector.substr(id_selector.length-1);
+                  var id = parseInt(id);
+                  $('#geCarousel').carousel(id);
+          });
+  
+  
+          // When the carousel slides, auto update the text
+          $('#geCarousel').on('slid', function (e) {
+                  var id = $('.item.active').data('slide-number');
+            		$('#carousel-text').html($('#slide-content-'+id).html());
+          });
+    </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
   </body>
