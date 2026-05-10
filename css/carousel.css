@@ -497,6 +497,51 @@ footer a:hover {
   line-height: 1.6;
 }
 
+/* Publication list */
+.publication-list {
+  padding-left: 28px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+.publication-list li {
+  margin-bottom: 14px;
+  padding-left: 6px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.publication-list li em {
+  color: var(--muted);
+}
+.publication-list li strong {
+  color: var(--accent-dark);
+}
+.pub-section-heading {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 6px;
+  display: inline-block;
+}
+.pub-cites {
+  color: var(--muted);
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* Software reference line (under software card body) */
+.software-ref {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
 /* Software cards */
 .software-card {
   padding: 24px;
