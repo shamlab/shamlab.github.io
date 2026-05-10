@@ -449,6 +449,85 @@ footer a:hover {
   font-size: 1em;
 }
 
+/* Page header intro paragraph (under Research / Software headings) */
+.page-header .lead {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 17px;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+/* News cards */
+.news-card {
+  padding: 24px;
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  background: var(--surface);
+  height: 100%;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+.news-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+.news-date {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.news-title {
+  margin-top: 14px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.news-card p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Software cards */
+.software-card {
+  padding: 24px;
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  background: var(--surface);
+  height: 100%;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+.software-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+.software-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.software-card p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.software-tags {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
 /* Responsive: smaller featurette heading on phones */
 @media (max-width: 767px) {
   .featurette-heading {
@@ -463,5 +542,9 @@ footer a:hover {
   }
   .page-header h1 {
     font-size: 28px;
+  }
+  .news-card,
+  .software-card {
+    margin-bottom: 16px;
   }
 }
