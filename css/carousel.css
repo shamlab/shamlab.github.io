@@ -18,8 +18,8 @@ body .modal-lg {
     margin-right:auto; 
 }
 
-b {
-	display:none;
+.email-noise {
+	display: none;
 }
 
 ul {
@@ -213,3 +213,4 @@ font-size:      1em;
     margin-top: 120px;
   }
 }
+
